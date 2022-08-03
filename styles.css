@@ -1,0 +1,445 @@
+/* Main Colors Used(rgb):
+    White: (246, 246, 246)
+    Black: (41, 41, 41)
+    Gray: (82, 82, 82) / (64, 64, 64)
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(246, 246, 246);
+    font-family: 'Mukta', sans-serif;
+}
+
+/* ---------------- Landing, Nav, General ---------------- */
+
+#landing {
+    background-image: url("assets/PassionateProgress-Crop.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    background-size: cover;
+    width: 100%;
+    height: 100vh; /* height: 1080px; */
+    color: rgb(246, 246, 246);
+    text-align: center;
+    font-size: 400%;
+}
+
+h1, h2, li {
+    cursor: default;
+}
+
+#landing h1 {
+    position: relative;
+    top: 10%;
+    z-index: 2;
+}
+
+/* #scrollText {
+    position: fixed;
+    margin: 0 auto;
+    left: 50%;
+    bottom: 0;
+    z-index: 2;
+    font-size: 32%;
+    font-weight: 100;
+    display: none;
+} */
+
+#scrollText {
+    position: fixed;
+    margin: 0 auto;
+    left: 50%;
+    bottom: 0;
+    z-index: 2;
+    width: 50px;
+    display: none;
+    filter: drop-shadow(3px 2px 2px rgb(41, 41, 41));
+}
+
+#landing #background {
+    z-index: 1;
+    background-color: rgb(41, 41, 41, .64);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#navButton {
+    height: 40px;
+}
+
+#menuButton {
+    position: relative;
+    z-index: 2;
+    /* width: 4%; */
+    width: 40px;
+    height: 40px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 90%;
+}
+
+#menuButton:hover {
+    cursor: pointer;
+}
+
+#navbar {
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    display: none;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+#navbar img {
+    width: 40px;
+    height: 40px;
+}
+
+#navbar img:hover {
+    width: 44px;
+    height: 44px;
+}
+
+#midNavButtons {
+    padding: 10%;
+    padding-top: 12%;
+}
+
+#firstNavButton {
+    padding-top: 12%;
+    padding-right: 10%;
+}
+
+#lastNavButton {
+    padding-top: 12%;
+    padding-left: 10%;
+}
+
+#lastNavButton:hover, #contactButton:hover {
+    cursor: pointer;
+}
+
+#navButtonModal {
+    background-color: rgb(41, 41, 41);
+    color:rgb(246, 246, 246);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+}
+
+#navButtonModal p {
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* ---------------- Contacts ---------------- */
+
+#contactsModal {
+    background-color: rgb(246, 246, 246);
+    color: rgb(41, 41, 41);
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    z-index: 5;
+    font-size: 24px;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
+#contactsModal a, #contactsModal a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+
+#contactsX {
+    margin: 0;
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    cursor: pointer;
+}
+
+#contactsModalBackground {
+    z-index: 4;
+    background-color: rgb(41, 41, 41, .86);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+/* ---------------- About Me ---------------- */
+
+#aboutMe {
+    margin: 64px
+}
+
+#gradPic {
+    margin: 0;
+    width: 25%;
+    padding: 64px;
+    float: left;
+}
+
+#whoIAm {
+    margin: 0;
+    padding-top: 128px;
+}
+
+#whoIAmText {
+    text-align: center;
+    cursor: default;
+}
+
+#selfPic {
+    margin: 0;
+    width: 25%;
+    padding: 64px;
+    float: right;
+}
+
+#csMajorSkills {
+    margin: 0;
+    padding-top: 32px;
+    cursor: default;
+}
+
+#csJourneyDiv {
+    text-align: center;
+    cursor: default;
+}
+
+/* ---------------- Programming ---------------- */
+
+#programming {
+    /* background-color: rgb(41, 41, 41);
+    color: rgb(246, 246, 246); */
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#bestWorks {
+    margin: 64px;
+}
+
+.works {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+}
+
+#obstructionPic {
+    margin: 0;
+    width: 25%;
+    padding: 64px;
+    float: right;
+}
+
+#fibRecPic {
+    margin: 0;
+    width: 25%;
+    padding: 64px;
+    float: left;
+}
+
+#shaPicsBG {
+    background-color: rgb(82, 82, 82);
+    height: 600px;
+}
+
+#sha3Pic1 {
+    margin: 0 auto;
+    width: 35%;
+    height: 75%;
+    padding: 5%;
+    /* position: absolute; */
+    left: 5%;
+}
+
+#sha3Pic1-2 {
+    margin: 0 auto;
+    width: 35%;
+    height: 75%;
+    padding: 5%;
+    /* position: absolute; */
+    right: 5%;
+    margin-top: 75px;
+}
+
+#sha3Pic2 {
+    margin: 0;
+    width: 80%;
+    padding: 64px;
+}
+
+#obstructionText, #fibRecText, #sha3Text {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    cursor: default;
+}
+
+/* ---------------- Photography ---------------- */
+
+#photos {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#photography {
+    margin: 64px;
+}
+
+#thePics img {
+    /* width: 40%;  */
+    /* height: 350px; */
+    margin: .5%;
+    margin-top: .32%;
+    margin-bottom: .32%;
+    width: 48%; 
+    height: 420px;
+    object-fit: cover;
+}
+
+/* ---------------- Audio ---------------- */
+
+#audio {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#music {
+    margin: 64px;
+}
+
+#songTable {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+#songTable th {
+    width: 25%;
+    cursor: default;
+}
+
+#songTable td {
+    text-align: center;
+}
+
+#songTable td img{
+    vertical-align: middle;
+}
+
+.songTitleText {
+    cursor: pointer;
+}
+
+.genreText {
+    cursor: default;
+}
+
+
+.songArt {
+    width: 75px;
+}
+
+#audioPlayer {
+    height: 20px;
+}
+
+#songThumbnail {
+    width: 50px;
+}
+
+#audioModal {
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.audioModalButtons {
+    width: 32px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+#audioModalClose {
+    font-size: 24px;
+    color: rgb(246, 246, 246);
+    cursor: pointer;
+    padding-left: 16px
+}
+
+#songProgress, #songVolume {
+    -webkit-appearance: none;
+    margin: 4px 4px;
+    width: 100%;
+    height: 8px;
+    outline: none;
+    background-color: rgb(246, 246, 246);
+}
+
+#songProgress::-webkit-slider-thumb, #songVolume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 32px;
+    background-color: rgb(82, 82, 82);
+    border: none;
+    border-radius: 24%;
+    cursor: pointer;
+    outline: none;
+    transition: .32s ease-in-out;
+}
+
+#songProgress::-moz-range-thumb, #songVolume::-moz-range-thumb {
+    -webkit-appearance: none;
+    width: 8px;
+    height: 24px;
+    background-color: rgb(82, 82, 82);
+    border: none;
+    border-radius: 24%;
+    cursor: pointer;
+    outline: none;
+    transition: .32s ease-in-out;
+}

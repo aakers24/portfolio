@@ -1,0 +1,47 @@
+Check out other websites and get inspiration/reference
+
+
+
+Maybe remove scroll drop-shadow and/or make it different color depending on bg color / location ?
+    - Possibly put a circle behind it
+
+
+Make a website icon
+
+
+Come up with and get a domain name
+
+
+
+Add a section (in about me?) about goals and things I foresee needing to improve on
+
+
+
+Reread and if necessary revise everything
+    - Caption pictures?
+    - Put first couple sha pics in same size divs with BGs and center them
+    - reword to make it not sound like im bad at algorithms in the journey section
+
+
+make the photo grid more creative
+    - Add some more vertical photos and vary sizes
+    - Less uniform grid
+
+
+background-image: linear gradient?
+
+
+
+Add best works projects to new public github repos
+    - Revise the crypto repo and make it public
+
+
+
+develop for desktop
+    - Figure out different resolutions/scalings/devices
+        - Change widths based on screen width (Should make it all good for mobile)
+
+
+
+Security Cerificate?
+    - Probably unnecessary as there is no sensitive data being sent to or from users
