@@ -14,7 +14,11 @@ body {
     font-family: 'Mukta', sans-serif;
 }
 
+
+
 /* ---------------- Landing, Nav, General ---------------- */
+
+
 
 #landing {
     background-image: url("assets/PassionateProgress-Crop.jpg");
@@ -155,7 +159,11 @@ h1, h2, li {
     padding-right: 16px;
 }
 
+
+
 /* ---------------- Contacts ---------------- */
+
+
 
 #contactsModal {
     background-color: rgb(246, 246, 246);
@@ -194,7 +202,11 @@ h1, h2, li {
     display: none;
 }
 
+
+
 /* ---------------- About Me ---------------- */
+
+
 
 #aboutMe {
     margin: 64px
@@ -235,7 +247,11 @@ h1, h2, li {
     cursor: default;
 }
 
+
+
 /* ---------------- Programming ---------------- */
+
+
 
 #programming {
     /* background-color: rgb(41, 41, 41);
@@ -269,28 +285,10 @@ h1, h2, li {
     float: left;
 }
 
-#shaPicsBG {
-    background-color: rgb(82, 82, 82);
-    height: 600px;
-}
-
-#sha3Pic1 {
-    margin: 0 auto;
-    width: 35%;
-    height: 75%;
-    padding: 5%;
-    /* position: absolute; */
-    left: 5%;
-}
-
 #sha3Pic1-2 {
-    margin: 0 auto;
-    width: 35%;
-    height: 75%;
-    padding: 5%;
-    /* position: absolute; */
-    right: 5%;
-    margin-top: 75px;
+    margin: 0;
+    width: 60%;
+    padding: 64px;
 }
 
 #sha3Pic2 {
@@ -305,7 +303,11 @@ h1, h2, li {
     cursor: default;
 }
 
+
+
 /* ---------------- Photography ---------------- */
+
+
 
 #photos {
     width: 100%;
@@ -329,7 +331,11 @@ h1, h2, li {
     object-fit: cover;
 }
 
+
+
 /* ---------------- Audio ---------------- */
+
+
 
 #audio {
     width: 100%;
@@ -408,7 +414,7 @@ h1, h2, li {
     font-size: 24px;
     color: rgb(246, 246, 246);
     cursor: pointer;
-    padding-left: 16px
+    padding-left: 16px;
 }
 
 #songProgress, #songVolume {
@@ -442,4 +448,59 @@ h1, h2, li {
     cursor: pointer;
     outline: none;
     transition: .32s ease-in-out;
+}
+
+
+
+/* ---------------- Small Screens ---------------- */
+
+
+
+@media only screen and (max-width: 719px) {
+
+    #menuButton {
+        margin-left: 85%;
+    }
+
+    #navbar img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    #navbar img:hover {
+        width: 24px;
+        height: 24px;
+    }
+
+    .audioModalButtons {
+        width: 20px;
+        padding: 2px;
+    }
+
+    #songProgress, #songVolume {
+        width: 20% !important;
+        height: 4px;
+    }
+
+    #audioModalClose {
+        font-size: 20px;
+        padding-left: 4px;
+    }
+
+    #contactsModal {
+        font-size: 16px;
+    }
+
+    #gradPic, #selfPic {
+        width: 32%;
+        padding: 8px;
+    }
+
+    #bestWorks img {
+        width: 100%;
+        float: none;
+        clear: both;
+        margin: 0;
+        padding: 0;
+    }
 }
