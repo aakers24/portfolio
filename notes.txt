@@ -1,16 +1,8 @@
-Make a website icon
+
 
 Come up with and get a domain name
+    - Set up the domain and hosting
 
-
-
-Add best works projects to new public github repos
-    - Revise the crypto repo and make it public
-
-
-
-Review and if necessary revise everything
-    - Add comments
 
 
 
@@ -27,6 +19,10 @@ Maybe remove scroll drop-shadow and/or make it different color depending on bg c
 
 
 Make the menu button stay on the screen at every scroll position
+
+
+
+Improve mobile design
 
 
 

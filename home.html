@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Austin Akers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Logo.png" />
 
     <!-- Include JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -18,6 +19,10 @@
 
 </head>
 <body>
+
+    <!-- HOME -->
+    <!-- The main landing page, navigation bars, buttons, and modals -->
+    <!-- The modals are filled and changed dynamically with JS -->
     <div id="landing">
 
         <div id="navButton">
@@ -60,6 +65,10 @@
     
         </div>
     </div>
+
+
+
+    <!-- ABOUT ME -->
 
 
 
@@ -112,6 +121,10 @@
         </div>
 
     </div>
+
+
+
+    <!-- PROGRAMMING -->
 
 
 
@@ -213,7 +226,8 @@
                     </p>
                     <br/>
 
-                    <h2><a href="https://github.com/aakers24/Crypto-SHA3ECDHIES">Source Code</a></h2>
+                    <h2><a href="https://github.com/aakers24/Crypto-SHA3ECDHIES/tree/refactor_GUI/crypto">Source Code</a></h2>
+                    <p>The cryptography portion of the project is linked, but the project has undergone some changes and restructuring as I'm collaborating with a friend to expand on its functionality.</p>
 
                 </div>
 
@@ -222,6 +236,10 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- PHOTOGRAPHY -->
 
 
 
@@ -243,6 +261,10 @@
 
         </div>
     </div>
+
+
+
+    <!-- AUDIO -->
 
 
 
@@ -303,15 +325,25 @@
         </div>
     </div>
 
-    <!-- JS Scripts -->
-    <script src="main.js"></script>
+
+
+    <!-- JAVASCRIPT -->
+
+
+
     <script>
+
+        // HOME
+        // Landing, nav, modals, scrolling prompt
+
         $("#menuButton").on('click', function(e){
             $("#menuButton").prop("src", "");
             $("#menuButton").css("display", "none");
             $("#navbar").slideDown(1000);
             $("#navbar").css("display", "flex");
         });
+
+
 
         $("#lastNavButton").on('click', function(e){
             $("#menuButton").prop("src", "assets/MenuButton.png");
@@ -322,12 +354,17 @@
             $("#navButtonModal").css("display", "none");
         });
 
+
+
+        // An abstraction for the fading in/out of the scroll prompt arrow
         var scrollTimeout = setTimeout(function(){
                         $("#scrollText").fadeIn(2000);
                         $("#scrollText").css("left", "50%");
                         // $("#scrollText").css("margin-left", "-43px");
                         $("#scrollText").css("margin-left", "-25px");
                     }, 5000);
+
+
 
         $(document).ready(function(){
             if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
@@ -341,17 +378,9 @@
                 }, 5000);
                 scrollTimeout;
             }
-
-            // Check window size and make changes accordingly
-            // if($(window).width < ){
-
-            // }
         });
 
-        // Check for window size on resize and make changes accordingly
-        $(window).on('resize', function(){
 
-        });
 
         $(document).on('scroll', function(){
             $("#scrollText").css("display", "none");
@@ -369,6 +398,8 @@
                 scrollTimeout;
             }
         });
+
+
 
         $("#links li").on('mouseover', function(e){
             switch($(this)[0].firstChild.id) {
@@ -417,6 +448,8 @@
             }
         });
 
+
+
         $("#links li").on('mousemove', function(e){
             $("#navButtonModal").css("top", e.clientY + 10);
             $("#navButtonModal").css("left", e.clientX + 25);
@@ -425,24 +458,39 @@
             }, 5000);
         });
 
+
+
         $("#links li").on('mouseleave', function(e){
             $("#navButtonModal").hide();
             $("#navButtonModal").css("display", "none");
         });
+
+
 
         $("#background").on('mousemove', function(e){
             $("#navButtonModal").hide();
             $("#navButtonModal").css("display", "none");
         });
 
+
+
         $("#contactButton").on('click', function(){
             $("#contactsModalBackground").fadeIn(1000);
         });
+
+
 
         $("#contactsX").on('click', function(){
             $("#contactsModalBackground").fadeOut(1000);
         });
 
+
+
+        // AUDIO
+        // Audio player and audio player modal
+
+
+        
         $(".songTitleText").on('click', function(){
             if($("#audioModal").css("display") == "none") {
                 $("#audioModal").hide().slideDown(1000);
@@ -495,10 +543,14 @@
             }
         });
 
+
+
         $("#audioPlayer").on('loadeddata', function(){
             $("#songProgress").prop("max", Math.floor($("#audioPlayer")[0].duration));
             $("#songProgress").val(0);
         });
+
+
 
         $("#playPause").on('click', function(){
             if($("#playPause").prop("title") == "play"){
@@ -512,12 +564,16 @@
             }
         });
 
+
+
         $("#audioModalClose").on('click', function(){
             $("#audioPlayer")[0].pause();
             $("#audioModal").slideUp(1000);
             $("#playPause").prop("src", "assets/Play.png");
             $("#playPause").prop("title", "play");
         });
+
+
 
         $("#volume").on('click', function(){
             if($("#audioPlayer")[0].muted) {
@@ -529,13 +585,19 @@
             }
         });
 
+
+
         $("#songVolume").on('mousemove', function(){
             $("#audioPlayer")[0].volume = $("#songVolume").val() / 100;
         });
 
+
+
         $("#songProgress").on('click', function(){
             $("#audioPlayer")[0].currentTime = $("#songProgress").val();
         });
+
+
 
         $($("#audioPlayer")[0]).on('timeupdate', function(){
             $("#songProgress").val(Math.floor($("#audioPlayer")[0].currentTime));
@@ -546,6 +608,8 @@
             }
         });
 
+
+
         $("#loop").on('click', function(){
             if($("#audioPlayer")[0].loop){
                 $("#audioPlayer")[0].loop = false;
@@ -555,6 +619,8 @@
                 $("#loop").css("opacity", 1);
             }
         });
+
+
 
         $("#next").on('click', function(){
             switch($("#audioSource").prop("title")) {
@@ -605,5 +671,6 @@
 
 
     </script>
+    <!-- Let Yourself Win -->
 </body>
 </html>
