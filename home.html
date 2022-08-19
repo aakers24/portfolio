@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Austin Akers</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Logo.png" />
+
+    <!-- Include JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <!-- Include Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+    <!-- HOME -->
+    <!-- The main landing page, navigation bars, buttons, and modals -->
+    <!-- The modals are filled and changed dynamically with JS -->
+    <div id="landing">
+
+        <div id="navButton">
+            <img src="assets/MenuButton.png" id="menuButton"/>
+        </div>
+
+        <div id="navbar">
+            <ul id="links">
+                <li id="firstNavButton"><a href="#landing" id="homeButton"><img src="assets/HomeButton.png" /></a></li>
+                <li id="midNavButtons"><a href="#aboutMe" id="aboutMeButton"><img src="assets/AboutMeButton.png" /></a></li>
+                <li id="midNavButtons"><a href="#programming" id="programmingButton"><img src="assets/ProgrammingButton.png" /></a></li>
+                <li id="midNavButtons"><a href="#photos" id="photosButton"><img src="assets/PhotosButton.png" /></a></li>
+                <li id="midNavButtons"><a href="#audio" id="audioButton"><img src="assets/AudioButton.png" /></a></li>
+                <li id="midNavButtons"><img src="assets/ContactButton.png" id="contactButton" /></li>
+                <li id="lastNavButton"><img src="assets/MenuButton.png" /></li>
+            </ul>
+        </div>
+
+        <h1>Austin Akers</h1>
+
+        <!-- <h2 id="scrollText">Scroll!</h2> -->
+        <img src="assets/Arrow.png" id="scrollText" />
+
+        <div id="navButtonModal"></div>
+
+        <div id="background"></div>
+
+    </div>
+
+
+
+    <div id="contactsModalBackground">
+        <div id="contactsModal">
+            <span id="contactsX">&times;</span>
+            <h2>Contacts</h2>
+            <hr style="width: 80%;"/>
+    
+            <p style="cursor: default;">Email: AustinA.Akers97@gmail.com</p>
+            <p><a href="https://github.com/aakers24">GitHub</a></p>
+    
+        </div>
+    </div>
+
+
+
+    <!-- ABOUT ME -->
+
+
+
+    <div id="aboutMe">
+        <img src="assets/gradPic.jpg" id="gradPic"/>
+        <p id="whoIAm">
+            <h2>Who I Am</h2>
+            <hr/>
+            <div id="whoIAmText">
+                I am a 25 year old who loves learning. I greatly enjoy the work I do as a CSS major, and enjoy reading and studying outside of the field as well. One of the driving forces behind my learning is a desire to understand how things work. Because of this, I love reading about and studying all sorts of topics from CSS and electrical engineering, to physics, to the social sciences and more.
+                <br/><br/>
+                Some of my other passions include MMA, music, and photography. I love training MMA because it is a vehicle for self improvement and I create strong bonds with the people I train with. The lessons I learn training transcend into all areas of life and help me in my studies as well as everyday life. Music and photography are important to me because they allow me to express myself and at times process the things happening in my life.
+                <br/><br/>
+                I think that incorporating all of these different things into my life are important because they allow me to be a more complete person and make up a higher-resolution image of who I am.
+            </div>
+        </p>
+        <br style="clear: both"/>
+        <img src="assets/UWHatPic.JPG" id="selfPic"/>
+        <p id="csMajorSkills">
+            <h2>Skills I Have Gained as a Computer Science and Systems Major</h2>
+            <hr/>
+            <ul>
+                <li>Ability to problem solve in a structured way</li>
+                <li>Ability to analyze data and apply the analysis to solutions</li>
+                <li>Ability to formulate different approaches and outlooks on scenarios</li>
+                <li>Understanding of mathematics and how it relates to the world</li>
+                <li>Understanding of and ability to work with computers on a low-level and high-level basis</li>
+                <li>Project management</li>
+                <li>Source control</li>
+                <li>Understanding of software engineering principles and applications</li>
+                <li>Understanding of network engineering principles and applications</li>
+                <li>Understanding of cybersecurity principles and applications</li>
+                <li>Understanding of AI and machine learning principles and applications</li>
+                <li>Understanding of web development principles and applications</li>
+                <li>Technical writing</li>
+                <li>Ability to work with peers on projects and come up with solutions that take contributions from the whole team</li>
+            </ul>
+        </p>
+        <br style="clear: both"/>
+        <div id="csJourneyDiv">
+            <p id="csJourney">
+                <h2>My Computer Science and Systems Journey</h2>
+                <hr/>
+                <p>The journey of my learning in CSS has been filled with ups and downs, but ultimately I am at a point where I am confident in my knowledge and abilities and proud of what I have accomplished. When I first began, I was at Tacoma Community College and took CS142 and CS143 which were the intro programming courses. These classes built a strong foundation for the rest of my learning and especially built confidence in me. I did well in the classes and spent a lot of time helping classmates that were struggling. This not only helped me build confidence and soft skills, but gave me a lot of extra experience with programming and problem solving as I was coming up with different ways of explaining things and approaching problems. This ended up helping me as I moved to UW because the different approaches had different strengths such as optimality, efficiency, intuitiveness, and creativity. Some of the early projects I worked on in these stages were a 2d chess game application and a very rudimentary photo editing application.</p>
+                <!-- <br/> -->
+                <p>At this point my learning split into different areas such as systems and algorithms. I enjoyed and excelled at the systems courses that dealt with low-level principles like the underlying electrical engineering, machine code, assembly, programming languages, and operating systems. The algorithms courses that dealt with discrete structures, data structures, and algorithm design and analysis were less interesting to me, but I still performed well in them and they were classes that taught me important concepts and gave me valuable experience.</p>
+                <!-- <br/> -->
+                <p>Things were all brought together in classes like AI and Cryptography. These classes were ones I really enjoyed and allowed me to apply much of my previously gained knowledge to applications that were interesting and exciting to me. I got to come up with some projects on my own which allowed me to apply concepts to something I created. This allowed me to apply what I'd learned in all my different classes in a way that put those ideas into context. This was exciting for me because when the concepts I didn't enjoy as much when they were the sole focus of a class were now more engaging and enjoyable for me because they were doing their job in a larger system. I was able to exercise my managerial skills working with groups of peers and got valuable experience with source control in software development.</p>
+            </p>
+        </div>
+
+    </div>
+
+
+
+    <!-- PROGRAMMING -->
+
+
+
+    <div id="programming">
+        <br/>
+        <div id="bestWorks">
+            <div style="font-size: 20px;"><h1>Programming: Best Works</h1></div>
+            <hr/>
+
+            <div id="obstruction" class="works">
+                <h1>Obstruction AI</h1>
+                <img src="assets/AB_6x6_4.png" id="obstructionPic"/>
+                <div id="obstructionText">
+                    <br/>
+                    <h2>Description</h2>
+                    <p>
+                        Obstruction is a game in which each player tries to be the last person to make a move. A move is made by placing your piece in a position on the board. When a position is occupied by a player's piece, none of the adjacent positions on the board can be occupied. So, if it's your turn and there is no place remaining for you to legally place your piece, you lose.
+                        <br/><br/>
+                        The project is a console application in which an AI plays against a human player in a game of Obstruction. I implemented the project in such a way that with small tweaks the board size and look-ahead can be changed. This means that the board size can theoretically be arbitrarily large, and the look-ahead of the AI can be arbitrarily long. The look-ahead is how many turns the AI looks into the future to make its move.
+                    </p>
+                    <br/>
+
+                    <h2>Implementation</h2>
+                    <p>
+                        The AI uses a Minimax algorithm to look into the future and see the possible moves that could be made given the current board state. It uses a function to estimate the best move and makes it.
+                        <br/><br/>
+                        However, as the board size and/or look-ahead distance increases this becomes very computationally expensive and quickly becomes unplayable due to the time it takes for the AI to consider it's moves. Because of this, there is an option to use an Alpha-Beta Pruning Minimax algorithm. This does mostly the same thing as the Minimax algorithm, but avoids unnecessary calculations by determining if an optimal solution has already been found. This greatly increases the usability of the AI as the board size and/or look-ahead distance increases.
+                    </p>
+                    <br/>
+
+                    <h2>Importance</h2>
+                    <p>
+                        What makes this one of my best works is that I went the extra mile to make the finished product work well and scale easily. It is a fun game and the AI will indeed beat me. Working on this project really helped me understand AI, and working to make it scale to an arbitrary board size was a challenge which really helped me get the most out of the project. It was very rewarding playing against the AI on all the different board sizes and look-ahead levels as well as with and without AB-Pruning because it showed the efficacy of my skills and the optimality of my result.
+                    </p>
+                    <br/>
+
+                    <h2><a href="https://github.com/aakers24/portfolio/tree/main/projects/ObstructionAI">Source Code</a></h2>
+                    <br/><br/>
+                </div>
+            </div>
+
+            <hr style="clear: both;"/>
+            <br style="clear: both;"/>
+
+            <div id="assemblyRecFib" class="works">
+                <h1>Recursive Nth Fibonacci Number in Assembly</h1>
+                <img src="assets/FibRec.jpg" id="fibRecPic"/>
+                <div id="fibRecText">
+                    <br/>
+                    <h2>Description</h2>
+                    <p>
+                        The Fibonacci Sequence is a pattern of numbers that has various applications in mathematics and other fields. In general the Nth number in the sequence is the sum of the 2 before it. So for example 0+1=1, 1+1=2, 1+2=3, 2+3=5, and so on.
+                    </p>
+                    <br/>
+
+                    <h2>Implementation</h2>
+                    <p>
+                        The program I wrote is in MIPS assembly language and is being run in MARS(MIPS and Runtime Simulator). It is given a number, and uses recursion to find the Nth number in the Fibonacci Sequence where N is the given number.
+                    </p>
+                    <br/>
+
+                    <h2>Importance</h2>
+                    <p>
+                        The significance of this project comes from the demonstration of understanding of very low-level coding. I love the low-level parts of computer science and the class this project comes from is all about those. Without these parts everything built on top would not exist.
+                        <br/><br/>
+                        The special part about this specific program that makes it one of my highlights is that the professor pulled it up and used it as an example of an excellent solution. The fact that my solution was so highly praised made it very special to me, especially because of the class it was in and what it represents understanding of.
+                    </p>
+                    <br/>
+
+                    <h2><a href="https://github.com/aakers24/portfolio/tree/main/projects/RecursiveFibonacci">Source Code</a></h2>
+                </div>
+            </div>
+            
+            <hr style="clear: both;"/>
+            <br style="clear: both;"/>
+
+            <div id="sha3" class="works">
+                <h1>SHA3-ECDHIES Cryptography Application</h1>
+                <img src="assets/sha3Pic2.jpg" id="sha3Pic1-2"/>
+                <div id="sha3Text">
+                    <br/>
+                    <h2>Description</h2>
+                    <p>
+                        Cybersecurity is a very important part of life on the internet. With so much data about us on computers, there is an opportunity for that data to be viewed, changed, corrupted, or otherwise interacted with by people who have bad intentions or just shouldn't have the ability to do so. Through the basic cybersecurity services confidentiality, integrity, authentication(legitimacy, non-repudiation), and availability(this one cannot be done with cryptography) we assure that our data stays safe.
+                    </p>
+                    <br/>
+
+                    <h2>Implementation</h2>
+                    <p>
+                        In this project, I implemented a program which allows for hashing, encrypting, decrypting, tagging, signing, and verifying data. The SHA3 derived KMACXOF256 function is used prominently in this project. For encrypting and decrypting, there are options to use both the symmetric algorithms and elliptic curve algorithms. The primary method of passing data in is through files although there are text input functionalities available. If I were to continue development of this project I would make it more robust and user-friendly, as the focus of the project was the functionality of the cryptography.
+                    </p>
+                    <br/>
+
+                    <img src="assets/sha3Pic3.jpg" id="sha3Pic2"/>
+
+                    <h2>Importance</h2>
+                    <p>
+                        To me this project was very important because as I said in the Who I Am section of the home page, I am driven by the need to know how things work. This project was very special to me because it allowed me to implement the standardized cryptography functions by myself and at the end I had a program that I wrote which could perform the basic cryptographic cybersecurity services. I'm very proud of this because that means that in the future if I want to ensure the security of something I'm working on, I've proven that I can do that myself and I don't have to rely on someone else to do that for me. At the very least it means I understand how the concepts work and makes me feel more secure in my future work, no matter the focus. I also got a lot of practice with software development, implementing things based on standards, working between different languages, and source control.
+                    </p>
+                    <br/>
+
+                    <h2><a href="https://github.com/aakers24/Crypto-SHA3ECDHIES/tree/refactor_GUI/crypto">Source Code</a></h2>
+                    <p>The cryptography portion of the project is linked, but the project has undergone some changes and restructuring as I'm collaborating with a friend to expand on its functionality.</p>
+
+                </div>
+
+                <br style="clear: both;"/>
+                <!-- <hr style="clear: both;"/> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- PHOTOGRAPHY -->
+
+
+
+    <div id="photos">
+        <div id="photography">
+            <div style="font-size: 20px;"><h1>Photography</h1></div>
+            <hr/>
+
+            <div id="thePics">
+                <img src="assets/RainierOnRustonWaterSunsetSTACK.jpg" class="photogL" id="rainierRuston"/>
+                <img src="assets/Bridge Before Dark Settles.jpg" class="photogR" id="bridgeDark"/>
+                <img src="assets/Blue and the Birds.JPG" class="photogR" id="blueNBirds"/>
+                <img src="assets/RearWheelLines.jpg" class="photogR" id="rx8"/>
+                <img src="assets/CarollingSnowglobers.JPG" class="photogR" id="snowGlobe"/>
+                <img src="assets/VintageMountain.jpg" class="photogR" id="mountains"/>
+                <img src="assets/CloseBridgeStreaks.jpg" class="photogR" id="bridgeStreaks"/>
+                <img src="assets/Ocean and Mountains with Scale.jpg" class="photogR" id="kauai"/>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- AUDIO -->
+
+
+
+    <div id="audio">
+        <div id="music">
+            <div style="font-size: 20px;"><h1>Audio</h1></div>
+            <hr/>
+
+            <table id="songTable">
+                <tr style="border-bottom: 2px solid rgb(41, 41, 41);">
+                    <th>Art</th>
+                    <th>Song</th>
+                    <th>Genre</th>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(82, 82, 82);">
+                    <td><img src="assets/DearlyDepartedThumbnail.jpg" class="songArt"/></td>
+                    <td class="songTitleText">Dearly Departed</td>
+                    <td class="genreText">Guitar</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(82, 82, 82);">
+                    <td><img src="assets/LossThumbnail.jpg" class="songArt"/></td>
+                    <td class="songTitleText">She Never Said</td>
+                    <td class="genreText">Guitar</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(82, 82, 82);">
+                    <td><img src="assets/LossThumbnail.jpg" class="songArt"/></td>
+                    <td class="songTitleText">The Cost of Moving Forward</td>
+                    <td class="genreText">Hip-Hop</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(82, 82, 82);">
+                    <td><img src="assets/LossThumbnail.jpg" class="songArt"/></td>
+                    <td class="songTitleText">Substance (snippet)</td>
+                    <td class="genreText">Guitar</td>
+                </tr>
+                <tr style="border-bottom: 1px solid rgb(82, 82, 82);">
+                    <td><img src="assets/SearchingThumbnail.jpg" class="songArt"/></td>
+                    <td class="songTitleText">Searching For Soul</td>
+                    <td class="genreText">Hip-Hop</td>
+                </tr>
+            </table>
+            
+
+            <div id="audioModal">
+                <audio id="audioPlayer" title="Dearly">
+                    <source src="assets/Dearly Departed Mixed.wav" type="audio/wav" id="audioSource" />
+                </audio>
+
+                <img src="assets/DearlyDepartedThumbnail.jpg" id="songThumbnail" />
+                <img src="assets/Play.png" id="playPause" class="audioModalButtons" title="play" />
+                <input type="range" id="songProgress" max="200" value="0" style="width: 200px;" />
+                <img src="assets/Volume.png" id="volume" class="audioModalButtons" />
+                <input type="range" id="songVolume" max="100" value="64" style="width: 100px;" />
+                <img src="assets/Loop.png" id="loop" class="audioModalButtons" style="opacity: .32;"/>
+                <img src="assets/Next.png" id="next" class="audioModalButtons" />
+                <span id="audioModalClose">&times;</span>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+
+
+    <script>
+
+        // HOME
+        // Landing, nav, modals, scrolling prompt
+
+        $("#menuButton").on('click', function(e){
+            $("#menuButton").prop("src", "");
+            $("#menuButton").css("display", "none");
+            $("#navbar").slideDown(1000);
+            $("#navbar").css("display", "flex");
+        });
+
+
+
+        $("#lastNavButton").on('click', function(e){
+            $("#menuButton").prop("src", "assets/MenuButton.png");
+            $("#menuButton").hide().fadeIn(1000);
+            $("#navbar").slideUp(1000);
+            //$("#navbar").css("display", "none");
+            $("#navButtonModal").hide();
+            $("#navButtonModal").css("display", "none");
+        });
+
+
+
+        // An abstraction for the fading in/out of the scroll prompt arrow
+        var scrollTimeout = setTimeout(function(){
+                        $("#scrollText").fadeIn(2000);
+                        $("#scrollText").css("left", "50%");
+                        // $("#scrollText").css("margin-left", "-43px");
+                        $("#scrollText").css("margin-left", "-25px");
+                    }, 5000);
+
+
+
+        $(document).ready(function(){
+            if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollTimeout = null;
+            } else {
+                scrollTimeout = setTimeout(function(){
+                    $("#scrollText").fadeIn(2000);
+                    $("#scrollText").css("left", "50%");
+                    // $("#scrollText").css("margin-left", "-43px");
+                    $("#scrollText").css("margin-left", "-25px");
+                }, 5000);
+                scrollTimeout;
+            }
+        });
+
+
+
+        $(document).on('scroll', function(){
+            $("#scrollText").css("display", "none");
+            clearTimeout(scrollTimeout);
+
+            if((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                scrollTimeout = null;
+            } else {
+                scrollTimeout = setTimeout(function(){
+                        $("#scrollText").fadeIn(2000);
+                        $("#scrollText").css("left", "50%");
+                        // $("#scrollText").css("margin-left", "-43px");
+                        $("#scrollText").css("margin-left", "-25px");
+                    }, 5000);
+                scrollTimeout;
+            }
+        });
+
+
+
+        $("#links li").on('mouseover', function(e){
+            switch($(this)[0].firstChild.id) {
+                case "homeButton":
+                    $("#navButtonModal").html("<p>Home</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+                case "aboutMeButton":
+                    $("#navButtonModal").html("<p>About Me</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+                case "programmingButton":
+                    $("#navButtonModal").html("<p>Programming</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+                case "photosButton":
+                    $("#navButtonModal").html("<p>Photography</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+                case "audioButton":
+                    $("#navButtonModal").html("<p>Audio</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+                case "contactButton":
+                    $("#navButtonModal").html("<p>Contact</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+                case "":
+                    $("#navButtonModal").html("<p>Menu</p>");
+                    $("#navButtonModal").css("top", e.clientY + 10);
+                    $("#navButtonModal").css("left", e.clientX + 25);
+                    $("#navButtonModal").hide().fadeIn(500);
+                    break;
+            }
+        });
+
+
+
+        $("#links li").on('mousemove', function(e){
+            $("#navButtonModal").css("top", e.clientY + 10);
+            $("#navButtonModal").css("left", e.clientX + 25);
+            setTimeout(function(){
+                $("#navButtonModal").fadeOut(1000);
+            }, 5000);
+        });
+
+
+
+        $("#links li").on('mouseleave', function(e){
+            $("#navButtonModal").hide();
+            $("#navButtonModal").css("display", "none");
+        });
+
+
+
+        $("#background").on('mousemove', function(e){
+            $("#navButtonModal").hide();
+            $("#navButtonModal").css("display", "none");
+        });
+
+
+
+        $("#contactButton").on('click', function(){
+            $("#contactsModalBackground").fadeIn(1000);
+        });
+
+
+
+        $("#contactsX").on('click', function(){
+            $("#contactsModalBackground").fadeOut(1000);
+        });
+
+
+
+        // AUDIO
+        // Audio player and audio player modal
+
+
+        
+        $(".songTitleText").on('click', function(){
+            if($("#audioModal").css("display") == "none") {
+                $("#audioModal").hide().slideDown(1000);
+                $("#audioModal").css("display", "flex");
+            }
+            $("#playPause").prop("src", "assets/Pause.png");
+            $("#playPause").prop("title", "pause");
+            switch($(this)[0].firstChild.data) {
+                case "Dearly Departed":
+                    // Bring up modal and start playing song
+                    $("#songThumbnail").prop("src", "assets/DearlyDepartedThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/Dearly Departed Mixed.wav");
+                    $("#audioSource").prop("type", "audio/wav");
+                    $("#audioSource").prop("title", "Dearly");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "She Never Said":
+                    $("#songThumbnail").prop("src", "assets/LossThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/She_Never_Said_Slightly_Mixed.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "She");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "The Cost of Moving Forward":
+                    $("#songThumbnail").prop("src", "assets/LossThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/The_Cost_of_Moving_Forward.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "Cost");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "Substance (snippet)":
+                    $("#songThumbnail").prop("src", "assets/LossThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/Substance.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "Substance");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "Searching For Soul":
+                    $("#songThumbnail").prop("src", "assets/SearchingThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/SearchingForSoul.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "Searching");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+            }
+        });
+
+
+
+        $("#audioPlayer").on('loadeddata', function(){
+            $("#songProgress").prop("max", Math.floor($("#audioPlayer")[0].duration));
+            $("#songProgress").val(0);
+        });
+
+
+
+        $("#playPause").on('click', function(){
+            if($("#playPause").prop("title") == "play"){
+                $("#audioPlayer")[0].play();
+                $("#playPause").prop("src", "assets/Pause.png");
+                $("#playPause").prop("title", "pause");
+            } else if($("#playPause").prop("title") == "pause") {
+                $("#audioPlayer")[0].pause();
+                $("#playPause").prop("src", "assets/Play.png");
+                $("#playPause").prop("title", "play");
+            }
+        });
+
+
+
+        $("#audioModalClose").on('click', function(){
+            $("#audioPlayer")[0].pause();
+            $("#audioModal").slideUp(1000);
+            $("#playPause").prop("src", "assets/Play.png");
+            $("#playPause").prop("title", "play");
+        });
+
+
+
+        $("#volume").on('click', function(){
+            if($("#audioPlayer")[0].muted) {
+                $("#audioPlayer")[0].muted = false;
+                $("#volume").css("opacity", 1);
+            } else {
+                $("#audioPlayer")[0].muted = true;
+                $("#volume").css("opacity", .32);
+            }
+        });
+
+
+
+        $("#songVolume").on('mousemove', function(){
+            $("#audioPlayer")[0].volume = $("#songVolume").val() / 100;
+        });
+
+
+
+        $("#songProgress").on('click', function(){
+            $("#audioPlayer")[0].currentTime = $("#songProgress").val();
+        });
+
+
+
+        $($("#audioPlayer")[0]).on('timeupdate', function(){
+            $("#songProgress").val(Math.floor($("#audioPlayer")[0].currentTime));
+
+            if($("#audioPlayer")[0].currentTime >= $("#audioPlayer")[0].duration){
+                $("#playPause").prop("src", "assets/Play.png");
+                $("#playPause").prop("title", "play");
+            }
+        });
+
+
+
+        $("#loop").on('click', function(){
+            if($("#audioPlayer")[0].loop){
+                $("#audioPlayer")[0].loop = false;
+                $("#loop").css("opacity", .32);
+            } else {
+                $("#audioPlayer")[0].loop = true;
+                $("#loop").css("opacity", 1);
+            }
+        });
+
+
+
+        $("#next").on('click', function(){
+            switch($("#audioSource").prop("title")) {
+                case "Dearly":
+                    // Bring up modal and start playing song
+                    $("#songThumbnail").prop("src", "assets/LossThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/She_Never_Said_Slightly_Mixed.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "She");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "She":
+                    $("#songThumbnail").prop("src", "assets/LossThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/The_Cost_of_Moving_Forward.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "Cost");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "Cost":
+                    $("#songThumbnail").prop("src", "assets/LossThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/Substance.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "Substance");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "Substance":
+                    $("#songThumbnail").prop("src", "assets/SearchingThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/SearchingForSoul.mp3");
+                    $("#audioSource").prop("type", "audio/mp3");
+                    $("#audioSource").prop("title", "Searching");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+                case "Searching":
+                    $("#songThumbnail").prop("src", "assets/DearlyDepartedThumbnail.jpg");
+                    $("#audioSource").prop("src", "assets/Dearly Departed Mixed.wav");
+                    $("#audioSource").prop("type", "audio/wav");
+                    $("#audioSource").prop("title", "Dearly");
+                    $("#audioPlayer")[0].load();
+                    $("#audioPlayer")[0].play();
+                    break;
+            }
+        });
+
+
+
+    </script>
+    <!-- Let Yourself Win -->
+</body>
+</html>
