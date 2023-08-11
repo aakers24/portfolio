@@ -93,7 +93,7 @@ h1, h2, li {
 }
 
 #navbar {
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(224, 224, 224, .86);
     width: 100%;
     height: 64px;
     position: fixed;
@@ -142,7 +142,7 @@ h1, h2, li {
 }
 
 #navButtonModal {
-    background-color: rgb(41, 41, 41);
+    background-color: rgba(41, 41, 41, .64);
     color:rgb(246, 246, 246);
     position: fixed;
     top: 0;
@@ -245,6 +245,42 @@ h1, h2, li {
 #csJourneyDiv {
     text-align: center;
     cursor: default;
+}
+
+
+
+/* ---------------- Cybersecurity ---------------- */
+
+
+
+#cybersec {
+    /* background-color: rgb(41, 41, 41);
+    color: rgb(246, 246, 246); */
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#cybersecDiv {
+    margin: 0;
+    padding-top: 32px;
+    cursor: default;
+    text-align: center;
+    cursor: default;
+    margin: 64px;
+}
+
+#cybersecDiv a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#ejptPic {
+    margin: 0;
+    width: 48%;
+    padding: 64px;
+    padding-top: 0px;
 }
 
 
@@ -467,14 +503,22 @@ h1, h2, li {
         margin-left: 85%;
     }
 
+    #navButton {
+        height: 20px;
+    }
+
     #navbar img {
         width: 20px;
         height: 20px;
     }
     
     #navbar img:hover {
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #firstNavButton, #lastNavButton, #midNavButtons {
+        padding-top: 0%;
     }
 
     .audioModalButtons {
@@ -499,6 +543,11 @@ h1, h2, li {
     #gradPic, #selfPic {
         width: 32%;
         padding: 8px;
+    }
+
+    #cybersecDiv img {
+        width: 86%;
+        padding: 0;
     }
 
     #bestWorks img {
