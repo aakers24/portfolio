@@ -283,6 +283,13 @@ h1, h2, li {
     padding-top: 0px;
 }
 
+#CDPic {
+    margin: 0;
+    width: 24%;
+    padding: 64px;
+    padding-top: 0px;
+}
+
 #ejptPic {
     margin: 0;
     width: 48%;
