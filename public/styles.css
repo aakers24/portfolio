@@ -247,6 +247,20 @@ h1, h2, li {
     cursor: default;
 }
 
+#mcmPic {
+    margin: 0;
+    width: 24%;
+    padding: 64px;
+    padding-top: 0px;
+}
+
+#dellPic {
+    margin: 0;
+    width: 24%;
+    padding: 64px;
+    padding-top: 0px;
+}
+
 
 
 /* ---------------- Cybersecurity ---------------- */
@@ -291,6 +305,13 @@ h1, h2, li {
 }
 
 #ejptPic {
+    margin: 0;
+    width: 48%;
+    padding: 64px;
+    padding-top: 0px;
+}
+
+#secPic {
     margin: 0;
     width: 48%;
     padding: 64px;
